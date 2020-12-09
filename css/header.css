@@ -1,0 +1,98 @@
+.header {
+    background: url(../img/destaque.jpeg) no-repeat;
+    background-size: cover;     /* tamanho redimensionado para cobrir toda a largura da tela */
+    padding-top:3em;
+}
+
+.header .menu-navegacao {
+    text-align: center;
+}
+
+.header .menu-navegacao .item-menu {
+    display: inline-block; 
+    /* margin: 0 2px 32px 0; */
+    margin: 0 0.5em 3em 0; 
+}
+
+.header .menu-navegacao .item-menu a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;    /* retira a decoração do link */
+
+    text-align: center;
+    padding: 1em;
+    background: rgba(0,0,0,0.1);
+    border-radius: 0.5em;
+    border: 2px solid rgba(255,255,255,0);
+    transition: 0.5s background-color;
+}
+
+.header .menu-navegacao .item-menu a:hover {                 /* hover e active são pseudo-classes */
+    background-color: #50A3A7;
+}
+
+.header .menu-navegacao .item-menu a:active {                 /* hover e active são pseudo-classes */
+    border-color:black;
+}
+
+.jumbotron {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.chamada {
+    text-shadow: 0.1em 0.1em 10px black;
+    padding: 0.5em;
+}
+
+.header .jumbotron .titulo {
+    color: white;
+    font-size: 4em;
+    transition: 0.5s font-size;
+    /* padding: 0.3em; */
+}
+
+.header .jumbotron .sub-titulo {
+    color: #78FA4D;
+    font-size: 3.5em;
+    margin-top: 0.15em;
+    transition: 0.5s font-size;
+    /* padding: 0.3em; */
+}
+
+@media (min-width: 1000px) {
+    .header .jumbotron .titulo {
+        font-size: 6em;
+    }
+    .header .jumbotron .sub-titulo {
+        font-size: 5em;
+    }
+}
+
+.header .jumbotron .inscreva-se {
+    display: inline-block;    /* coloca todo o botão dentro de elemento */
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;    /* retira a decoração do link */
+
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    box-sizing: border-box; /* indica que os pixels do padding estão dentro do width */
+    background-color: #50A3A7;
+    border-radius: 0.5em;
+    border: 2px solid rgba(255,255,255,0);
+    transition: 0.5s background-color;
+}
+
+.header .jumbotron .inscreva-se:hover {                 /* hover e active são pseudo-classes */
+    background-color: #786E94;
+}
+
+.header .jumbotron .inscreva-se:active {                 /* hover e active são pseudo-classes */
+    border-color:black;
+}
+

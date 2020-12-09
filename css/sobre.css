@@ -1,0 +1,21 @@
+.painel-sobre {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.painel-sobre h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.painel-sobre h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.painel-sobre .sobre-descricao {
+    font-size: 1.5em;
+    line-height: 1.7em;
+}

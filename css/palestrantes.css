@@ -1,0 +1,53 @@
+.secao-palestrantes {
+    margin-top: 2em;
+    background-color: #F17248;
+}
+
+.titulo-secao-palestrantes {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.2em;
+}
+
+.sub-titulo-secao-palestrantes {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.painel-palestrantes {
+    text-align: center;
+}
+
+.painel-palestrantes .quadro-palestrante {
+    display: inline-block;
+    vertical-align: top;
+    width: 25em;
+    padding: 2em 1em;
+    text-align: center;
+    background-color: white;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.painel-palestrantes .quadro-palestrante .foto-palestrante {
+    border-radius: 50%;
+}
+
+.painel-palestrantes .quadro-palestrante .nome-palestrante {
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+.painel-palestrantes .quadro-palestrante .titulo-palestrante {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 2em;
+}
+
+.painel-palestrantes .quadro-palestrante .sobre-palestrante {
+    font-size: 1.5em;
+}

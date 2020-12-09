@@ -1,0 +1,329 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* css do header */
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px, 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+} 
+
+/* css do rodapé */
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/* css da página principal (Home) */
+
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;     /* 2em => 2 x fonte padrão */
+    margin: 0 0 1em;    /* 1em => 1 x fonte do titulo-principal */
+    clear: left;        /* limpa o espaço reservado pelo float */  
+    /* text-shadow: 2px 2px #FF0000; /* sombra em texto */
+}
+
+.principal {
+    padding: 2em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;    /* 1em => 1 x fpnte do parágrafo */
+    line-height: 1.5;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;     /* float => imagem flutuará mas seu espaço na página será preservado */
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 2em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios {
+    padding: 2em 0;
+    background: #888888;
+    /* box-shadow: inset -3px -3px 10px red; /* shadow interna deslX deslY trans cor */
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;  /* aumentado o espaçamentos entre as linhas itens */
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "🟊";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    box-shadow: 10px 10px 10px 0 #000000;  /* shadow: deslX deslY transicao espalhamentoExterno cor */ 
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+/* css da página de produtos */
+
+.produtos {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%; /* 30% da largura definida para .produtos */
+    vertical-align: top;
+    /* background: #CCCCCC; */
+    margin: 0 1.5%; /* 1,5% + 30% + 1,5% = 33% */
+    padding: 30px 20px;   
+    box-sizing: border-box; /* indica que os pixels do padding estão dentro do width */
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover {                /* hover e active são chamadas pseudo-classes */
+    border-color: #c78c19;
+}
+
+.produtos li:active {
+    border-color: #088c19;
+}
+
+.produtos li:hover h2 {
+    font-size: 32px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* css da página de contato */
+
+.formcontato {
+    /* margin: 40px 0; */
+    width: 940px;
+    margin: 40px auto;
+}
+
+.formcontato label, .formcontato legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.selection {
+    margin: 20px 0;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 50%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-style: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+.horario-atendimento {
+    width: 940px;
+    margin: 0 auto;
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* definições do CSS para dispositivos com tela com largura máxima de 480px */
+/* @media => indica uma media query */
+
+@media screen and (max-width: 480px) {
+  .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .formcontato, .horario-atendimento {
+      width: auto;
+  }
+
+  .caixa img {
+      height: 12em;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  nav {
+      position: static;
+  }
+ 
+  nav li {
+    margin: 0 0 10px 15px;
+  }
+
+  .principal, .mapa, .beneficios {
+      padding: 1em 0 0 0;
+  }
+
+  .titulo-principal {
+    font-size: 1.5em;   
+  }
+ 
+  .lista-beneficios, .imagem-beneficios {
+    width: 100%;
+  }
+
+  .produtos {
+    padding: 0 0;
+}
+
+  .produtos li {
+      display: block;
+      margin: 1em 2em;
+      width: auto;
+  }
+
+  .formcontato {
+      margin: 1em 1em;
+  }
+
+  .input-padrao {
+    box-sizing: border-box; /* indica que os pixels do padding estão dentro do width */
+    width: 100%;
+}
+
+  .horario-atendimento {
+    margin: 1em 1em;
+}
+
+}

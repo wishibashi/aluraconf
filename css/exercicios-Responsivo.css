@@ -1,0 +1,142 @@
+.secao {
+    width: 100%;
+}
+
+.mini {
+    float: left;
+    width: 50%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo,
+.secao {
+    padding: 0 1%;
+}
+
+.logo img {
+    width: 200px;
+}
+    
+.logo,
+.busca,
+.barra-nav,
+.menu-principal {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-principal li {
+    float: left;
+}
+
+header {
+    padding: 0.5em 0;
+}
+
+.destaques {
+    margin-top: 1em;
+}
+
+.barra-nav {
+    margin: 0.4em 0;
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 1.125em;
+    }
+    .secao {
+        width: 50%;
+        float: left;
+    }
+}
+@media (min-width: 1000px) {
+    html {
+        font-size: 1.25em;
+    }
+    .secao {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 600px) {
+    .barra-nav {
+        background: #F0F0F0;
+        padding: 1em;
+        margin: 0;
+    
+        height: 100%;
+        width: 90%;
+        max-width: 320px;
+    
+        position: fixed;    /* posiciona o menu em cima do conteúdo */
+        z-index: 1;         /* posição de sobreposição de elementos */
+        top: 0;
+        left: -90%;         /* posiciona o menu fora da tela. Note: left = width = 90% */
+    
+        transition: left 0.3s ease-out; /* efeito para aparecer da esquerda (ease-out: desacelera no final) */ 
+    }
+    
+    .menu-ativo .barra-nav {
+        left: 0;    /* quando a classe menu-ativo está presente => menu entra na tela */
+    }
+
+    .menu-principal li {
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    .menu-ativo:after { /* Psedo-elemento. Somete quando menu ativo tornar-se presente */
+        content: "";
+        display: block;
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;      /* 0 pra todos os lados => 100% da página */
+                        /* z-index da barra é maior (1), então esse elemento vai ficar atrás dele */
+        background: rgba(0,0,0,0.4);  /* preto com opacidade de 40% */
+    
+    }
+}
+
+@media not all and (max-width: 600px) {   /* not all and XXX => nega XXX */
+    .menu-abrir,
+    .menu-fechar {
+        display: none;
+    }
+}
+
+.menu-abrir,
+.menu-fechar {
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    font-size: 1.6em;
+    text-indent: -999em;    /* coloca o texto lá fora da tela */
+}
+
+.menu-abrir {
+    height: 0;
+    width: .75em;
+    padding-top: .125em;
+    border-top: .375em double #000;
+    border-bottom: .125em solid #000;
+
+    vertical-align: middle;
+    margin: 0.5em;
+}
+
+.menu-fechar:before {
+    content: "\00d7";    /* caracter X */
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 0; /* coloca o caracter (content) na direita da tela */
+}

@@ -1,0 +1,59 @@
+.header {
+    background: url(../img/destaque.jpeg) no-repeat;
+    background-size: cover;     /* tamanho redimensionado para cobrir toda a largura da tela */
+    padding-top:3em;
+}
+
+.header .menu-navegacao {
+    /* width: 100%; */
+    text-align: center;
+}
+
+.menu-navegacao li {
+    display: inline-block; 
+    /* margin: 3em 0.5em; */
+    
+}
+
+.menu-navegacao a {
+    text-transform: uppercase;
+    color: #fefefe;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;    /* retira a decoração do link */
+
+    text-align: center;
+    padding: 1em 1em;
+    background: rgba(0,0,0,0.1);
+    border-radius: 0.5em;
+    transition: 1s color;
+}
+
+.menu-navegacao a:hover {                 /* hover e active são pseudo-classes */
+    background: #50A3A7;
+}
+
+.menu-navegacao a:active {
+    border-color:black;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%; /* 30% da largura definida para .produtos */
+    vertical-align: top;
+    /* background: #CCCCCC; */
+    margin: 0 1.5%; /* 1,5% + 30% + 1,5% = 33% */
+    padding: 30px 20px;   
+    box-sizing: border-box; /* indica que os pixels do padding estão dentro do width */
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover {                /* hover e active são chamadas pseudo-classes */
+    border-color: #c78c19;
+}
+
+.produtos li:active {
+    border-color: #088c19;
+}
